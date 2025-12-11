@@ -10,7 +10,7 @@ services:
       - phpfpm
 
   phpfpm:
-    image: markoshust/magento-php:8.4-0
+    image: markoshust/magento-php:8.4-fpm-0
     volumes:
       - ./pub:/var/www/html
 
