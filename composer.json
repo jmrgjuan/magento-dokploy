@@ -1,0 +1,10 @@
+{
+  "name": "acme/magento-project",
+  "require": {
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "bash scripts/install-magento.sh"
+    ]
+  }
+}
