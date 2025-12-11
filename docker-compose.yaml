@@ -3,7 +3,7 @@ services:
   app:
     image: markoshust/magento-nginx:1.24-0
     ports:
-      - "10000:8000"
+      - "10000:9000"
     volumes:
       - ./pub:/var/www/html
     depends_on:
