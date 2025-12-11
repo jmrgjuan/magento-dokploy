@@ -1,16 +1,9 @@
 version: "3.9"
 services:
-  app:
-    image: markoshust/magento-nginx:1.24-0
-    ports:
-      - "10000:9000"
-    volumes:
-      - ./pub:/var/www/html
-    depends_on:
-      - phpfpm
-
   phpfpm:
     image: markoshust/magento-php:8.4-fpm-0
+    ports:
+      - "9000:9000"
     volumes:
       - ./pub:/var/www/html
 
