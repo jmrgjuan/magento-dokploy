@@ -1,18 +1,15 @@
 #!/usr/bin/env bash
 set -e
 
-# Comprobar si ./pub/index.php no existe
 if [ ! -f "./pub/index.php" ]; then
-    # Crear el directorio ./pub si no existe
     mkdir -p ./pub
-    
-    # Crear el archivo ./pub/index.php con contenido "hello world"
-    echo -e '<?php\n\necho "<h1>hello world</h1>";\n' > ./pub/index.php
+    echo '<?php echo "hola";' > ./pub/index.php
+    echo "--- index.php creado"
 else
-    echo "---- No hago nada"
+    echo "--- index.php ya existe, no hago nada"
 fi
 
-echo "------> script de pruebas completado"
+echo "--- script de pruebas completado"
 exit 0
 
 if [ "$INSTALL_MAGENTO" = "true" ] && [ ! -f app/etc/env.php ]; then
