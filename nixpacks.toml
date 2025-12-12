@@ -1,7 +1,6 @@
 [phases.setup]
 nixPkgs = [
   # PHP con extensiones
-  "php84.withExtensions",
   "php84Extensions.bcmath",
   "php84Extensions.ctype",
   "php84Extensions.curl",
