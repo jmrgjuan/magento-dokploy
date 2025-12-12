@@ -1,6 +1,6 @@
 [phases.setup]
 nixPkgs = [
-  # PHP con extensiones
+  # Extensiones PHP válidas en Nix
   "php84Extensions.bcmath",
   "php84Extensions.ctype",
   "php84Extensions.curl",
@@ -11,7 +11,6 @@ nixPkgs = [
   "php84Extensions.gd",
   "php84Extensions.iconv",
   "php84Extensions.intl",
-  "php84Extensions.json",
   "php84Extensions.mbstring",
   "php84Extensions.openssl",
   "php84Extensions.pdo_mysql",
