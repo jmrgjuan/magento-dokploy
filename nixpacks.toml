@@ -26,15 +26,14 @@ nixPkgs = [
   "php84Extensions.zip",
   "php84Extensions.zlib",
 
-  # Librerías de sistema
+  # Librerías de sistema necesarias
   "libxml2",
   "libzip",
   "zlib",
   "icu",
   "imagemagick",
-
-  # Composer
-  "php84Packages.composer"
+  "libxslt",   # 🔑 necesaria para ext-xsl
+  "pkg-config" # ayuda a que PHP detecte las librerías
 ]
 
 [phases.build]
