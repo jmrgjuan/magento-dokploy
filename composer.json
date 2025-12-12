@@ -9,7 +9,6 @@
     "ext-filter": "*",
     "ext-ftp": "*",
     "ext-gd": "*",
-    "ext-hash": "*",
     "ext-iconv": "*",
     "ext-intl": "*",
     "ext-json": "*",
